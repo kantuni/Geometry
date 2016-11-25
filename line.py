@@ -20,7 +20,7 @@ class Line:
         if self.m is None:
             return 'y = 0, x = {0}'.format(self.a)
         elif self.m == 0:
-            return 'y = {0}, x = 0'.format(self.b)
+            return 'y = {0}'.format(self.b)
         else:
             return 'y = {0}x + {1}'.format(self.m, self.b)
 
