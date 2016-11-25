@@ -78,10 +78,10 @@ class Line:
             y = self.m * x + self.b
         elif self.m is None:
             x = self.a
-            y = other.a * x + other.b
+            y = other.m * x + other.b
         else:
             x = other.a
-            y = self.a * x + self.b
+            y = self.m * x + self.b
 
         return Point(x, y)
 
