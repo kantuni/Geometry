@@ -20,7 +20,7 @@ class Point {
       this->y = y;
     }
   
-    friend ostream &operator << (ostream &output, const Point &p) {
-      return output << "(" << p.x << ", " << p.y << ")";
+    friend ostream &operator << (ostream &output, const Point &point) {
+      return output << "(" << point.x << ", " << point.y << ")";
     }
 };
