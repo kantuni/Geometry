@@ -34,8 +34,8 @@ class Line:
         :return: {Line}
         """
         m = None if p.x == q.x else (p.y - q.y) / (p.x - q.x)
-        b = 0 if m is None else p.y - m * p.x
-        a = p.x if m is None else (0 if m == 0 else -b / m)
+        b = None if m is None else p.y - m * p.x
+        a = p.x if m is None else (None if m == 0 else -b / m)
 
         return cls(m, b, a)
 
@@ -48,8 +48,8 @@ class Line:
         :param m: slope
         :return: {Line}
         """
-        b = 0 if m is None else p.y - m * p.x
-        a = p.x if m is None else (0 if m == 0 else -b / m)
+        b = None if m is None else p.y - m * p.x
+        a = p.x if m is None else (None if m == 0 else -b / m)
 
         return cls(m, b, a)
 
@@ -109,6 +109,6 @@ class Line:
                 return None
 
             # horizontal line
-            perpendicular = Line(0, p.y, 0)
+            perpendicular = Line(0, p.y, 0)  # why is x-intercept = 0?
 
         return perpendicular
