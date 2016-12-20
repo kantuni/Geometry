@@ -27,7 +27,7 @@ class Line:
     @classmethod
     def from_two_points(cls, p, q):
         """
-        Get a line equation from 2 points
+        Create a line from 2 points
 
         :param p: {Point}
         :param q: {Point}
@@ -42,7 +42,7 @@ class Line:
     @classmethod
     def from_point_and_slope(cls, p, m):
         """
-        Get a line equation from a point and a slope
+        Create a line from a point and a slope
 
         :param p: {Point}
         :param m: slope
@@ -99,7 +99,7 @@ class Line:
 
             if self.m == 0:
                 # vertical line
-                perpendicular = Line(None, 0, p.x)
+                perpendicular = Line(None, None, p.x)
             else:
                 # line with a "negative reciprocal" slope
                 perpendicular = self.from_point_and_slope(p, -1 / self.m)
@@ -109,6 +109,6 @@ class Line:
                 return None
 
             # horizontal line
-            perpendicular = Line(0, p.y, 0)  # why is x-intercept = 0?
+            perpendicular = Line(0, p.y, None)
 
         return perpendicular

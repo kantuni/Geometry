@@ -9,10 +9,10 @@
 
 class Point {
   public:
-    double x;
-    double y;
+    long double x;
+    long double y;
 
-    Point(double, double);
+    Point(long double, long double);
 };
 
 

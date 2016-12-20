@@ -9,19 +9,19 @@
 #include "Line.h"
 
 class Circle {
-  private:
-    Point *center;
-    double radius;
-
   public:
-    Circle(Point *, double);
+    // TODO: use Point class instead
+    long double x;
+    long double y;
+    long double radius;
 
-    Point get_center();
+    // center.x, center.y, radius
+    Circle(long double, long double, long double);
 
-    double get_radius();
-
+    // check if a point is inside the circle
     bool point_in_circle(Point);
 
+    // check if a line intersects the circle
     bool line_intersects_circle(Line);
 };
 

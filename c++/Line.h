@@ -10,20 +10,26 @@
 
 class Line {
   public:
-    double m; // slope
-    double b; // y-intercept
-    double a; // x-intercept
+    long double m; // slope
+    long double b; // y-intercept
+    long double a; // x-intercept
 
+    // create a line from 2 points
     Line(Point, Point);
 
-    Line(Point, double);
+    // create a line from a point and a slope
+    Line(Point, long double);
 
-    Line(double, double, double);
+    // create a line from a slope, a y-intercept, and an x-intercept
+    Line(long double, long double, long double);
 
+    // check if 2 lines are parallel
     bool is_parallel(Line);
 
+    // return a point of intersection of 2 lines
     Point point_of_intersection(Line);
 
+    // drop a perpendicular from a point to a line
     Line perpendicular(Point);
 };
 

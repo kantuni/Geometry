@@ -4,7 +4,7 @@
 
 #include "Point.h"
 
-Point::Point(double x, double y) {
+Point::Point(long double x, long double y) {
   this->x = x;
   this->y = y;
 }
