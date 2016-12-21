@@ -27,29 +27,29 @@ class Line:
     @classmethod
     def from_two_points(cls, p, q):
         """
-        Create a line from 2 points
+        Get a line equation from 2 points
 
         :param p: {Point}
         :param q: {Point}
         :return: {Line}
         """
-        m = None if p.x == q.x else (p.y - q.y) / (p.x - q.x)
-        b = None if m is None else p.y - m * p.x
-        a = p.x if m is None else (None if m == 0 else -b / m)
+        m = None if p.x == q.x else (q.y - p.y) / (q.x - p.x)
+        b = 0 if m is None else p.y - m * p.x
+        a = p.x if m is None else (0 if m == 0 else -b / m)
 
         return cls(m, b, a)
 
     @classmethod
     def from_point_and_slope(cls, p, m):
         """
-        Create a line from a point and a slope
+        Get a line equation from a point and a slope
 
         :param p: {Point}
         :param m: slope
         :return: {Line}
         """
-        b = None if m is None else p.y - m * p.x
-        a = p.x if m is None else (None if m == 0 else -b / m)
+        b = 0 if m is None else p.y - m * p.x
+        a = p.x if m is None else (0 if m == 0 else -b / m)
 
         return cls(m, b, a)
 
@@ -99,7 +99,7 @@ class Line:
 
             if self.m == 0:
                 # vertical line
-                perpendicular = Line(None, None, p.x)
+                perpendicular = Line(None, 0, p.x)
             else:
                 # line with a "negative reciprocal" slope
                 perpendicular = self.from_point_and_slope(p, -1 / self.m)
@@ -109,6 +109,6 @@ class Line:
                 return None
 
             # horizontal line
-            perpendicular = Line(0, p.y, None)
+            perpendicular = Line(0, p.y, 0)
 
         return perpendicular

@@ -11,26 +11,27 @@ class Circle:
 
     def point_in_circle(self, point):
         """
-        Check if a point is inside the circle
+        Check if a point is inside a circle
 
         :param point: {Point}
         :return: {bool}
         """
-        return True if (point.x - self.center.x) ** 2 + (point.y - self.center.y) ** 2 < self.r ** 2 else False
+        return True if (point.x - self.center.x) ** 2 + (point.y - self.center.y) ** 2 <= self.r ** 2 else False
 
     def line_intersects_circle(self, line):
         """
-        Check if a line intersects the circle
+        Check if a line intersects a circle
 
         :param line: {Line}
         :return: {bool}
         """
         perpendicular = line.perpendicular(self.center)
-        # line through the center of a circle
+        # line through a center of a circle
         if perpendicular is None:
             return True
         else:
             intersection = line.point_of_intersection(perpendicular)
-            if intersection and self.point_in_circle(intersection):
+            # assuming they are not any tangent lines
+            if self.point_in_circle(intersection):
                 return True
             return False
