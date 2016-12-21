@@ -13,7 +13,7 @@ class Circle {
     // TODO: use Point class instead
     long double x;
     long double y;
-    long double radius;
+    long double r;
 
     // center.x, center.y, radius
     Circle(long double, long double, long double);
