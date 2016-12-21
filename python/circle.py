@@ -16,7 +16,7 @@ class Circle:
         :param point: {Point}
         :return: {bool}
         """
-        return True if (point.x - self.center.x) ** 2 + (point.y - self.center.y) ** 2 <= self.r ** 2 else False
+        return True if (point.x - self.center.x) ** 2 + (point.y - self.center.y) ** 2 < self.r ** 2 else False
 
     def line_intersects_circle(self, line):
         """
