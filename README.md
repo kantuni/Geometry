@@ -2,6 +2,6 @@
 A slim geometry module in C++ and Python
 
 - C++: beta
-- Python 3.5: released
+- Python 3: released
 
 Extremely helpful on ACM ICPC
