@@ -6,7 +6,7 @@
 using namespace std;
 
 int main() {
-  cout << "Debug: Point" << endl;
+  cout << "DEBUG: Point" << endl;
   Point p1 = Point(0, 0);
   Point q1 = Point(1, 1);
   Point p2 = Point(200, 100);
@@ -17,7 +17,7 @@ int main() {
   cout << q2.x << ", " << q2.y << endl;
 
 
-  cout << endl << "Debug: Line" << endl;
+  cout << endl << "DEBUG: Line" << endl;
   Line l1 = Line(p1, q1);
   Line l2 = Line(p2, q2);
   cout << "l1 slope: " << l1.m << endl;
@@ -37,7 +37,7 @@ int main() {
   cout << "perpendicular x-intercept: " << perpendicular.a << endl;
 
 
-  cout << endl << "Debug: Circle" << endl;
+  cout << endl << "DEBUG: Circle" << endl;
   Circle c = Circle(p1.x, p1.y, 10);
   cout << "Point in circle: " << c.point_in_circle(q1) << endl;
   cout << "Line intersects circle: " << c.line_intersects_circle(l2) << endl;
