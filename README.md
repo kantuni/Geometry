@@ -1,5 +1,5 @@
 # Geometry
-A slim geometry module in C++ and Python
+A slim geometry module.
 
 - C++: beta
 - Python 3: released
