@@ -5,7 +5,7 @@
 using namespace std;
 
 int main() {
-  cout << "DEBUG: Point" << "\n";
+  cout << "DEBUG: Point\n";
   Point p1 = Point(0, 0);
   Point q1 = Point(1, 1);
   Point p2 = Point(200, 100);
