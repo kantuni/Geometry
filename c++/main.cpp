@@ -2,7 +2,6 @@
 #include "Point.h"
 #include "Line.h"
 #include "Circle.h"
-
 using namespace std;
 
 int main() {
