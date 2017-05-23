@@ -4,7 +4,6 @@
 
 #ifndef GEOMETRY_CIRCLE_H
 #define GEOMETRY_CIRCLE_H
-
 #include "Point.h"
 #include "Line.h"
 
@@ -24,6 +23,5 @@ class Circle {
     // check if a line intersects the circle
     bool line_intersects_circle(Line);
 };
-
 
 #endif // GEOMETRY_CIRCLE_H
