@@ -4,7 +4,6 @@
 
 #ifndef GEOMETRY_POINT_H
 #define GEOMETRY_POINT_H
-
 #include <iostream>
 
 class Point {
@@ -14,6 +13,5 @@ class Point {
 
     Point(long double, long double);
 };
-
 
 #endif // GEOMETRY_POINT_H
