@@ -23,7 +23,6 @@ bool Circle::line_intersects_circle(Line l) {
   Line perpendicular = l.perpendicular(Point(this->x, this->y));
   // line through the center of the circle
   bool ltc = isnan(perpendicular.m) && isnan(perpendicular.b) && isnan(perpendicular.a);
-
   if (ltc) {
     return true;
   } else {
