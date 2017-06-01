@@ -38,6 +38,5 @@ int main() {
   Circle c = Circle(p1.x, p1.y, 10);
   cout << "Point in circle: " << c.point_in_circle(q1) << "\n";
   cout << "Line intersects circle: " << c.line_intersects_circle(l2) << "\n";
-
   return 0;
 }
