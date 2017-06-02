@@ -1,7 +1,3 @@
-//
-// Created by Henrikh Kantuni on 12/19/16.
-//
-
 #include "Line.h"
 
 // create a line from 2 points

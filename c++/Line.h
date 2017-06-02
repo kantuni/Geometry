@@ -1,7 +1,3 @@
-//
-// Created by Henrikh Kantuni on 12/19/16.
-//
-
 #ifndef GEOMETRY_LINE_H
 #define GEOMETRY_LINE_H
 
