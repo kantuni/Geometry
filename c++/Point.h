@@ -1,7 +1,3 @@
-//
-// Created by Henrikh Kantuni on 12/19/16.
-//
-
 #ifndef GEOMETRY_POINT_H
 #define GEOMETRY_POINT_H
 #include <iostream>
@@ -15,3 +11,4 @@ class Point {
 };
 
 #endif // GEOMETRY_POINT_H
+
