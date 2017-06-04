@@ -71,4 +71,3 @@ Line Line::perpendicular(Point p) {
     return Line(0, p.y, 0);
   }
 }
-

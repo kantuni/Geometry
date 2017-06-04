@@ -11,4 +11,3 @@ class Point {
 };
 
 #endif // GEOMETRY_POINT_H
-

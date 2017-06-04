@@ -1,7 +1,3 @@
-//
-// Created by Henrikh Kantuni on 12/19/16.
-//
-
 #ifndef GEOMETRY_CIRCLE_H
 #define GEOMETRY_CIRCLE_H
 #include "Point.h"

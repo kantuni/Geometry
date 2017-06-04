@@ -1,7 +1,3 @@
-//
-// Created by Henrikh Kantuni on 12/19/16.
-//
-
 #include "Circle.h"
 
 // center.x, center.y, radius

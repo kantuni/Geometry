@@ -31,4 +31,3 @@ class Line {
 
 
 #endif // GEOMETRY_LINE_H
-
