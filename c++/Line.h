@@ -1,6 +1,5 @@
 #ifndef GEOMETRY_LINE_H
 #define GEOMETRY_LINE_H
-
 #include <cmath>
 #include "Point.h"
 
